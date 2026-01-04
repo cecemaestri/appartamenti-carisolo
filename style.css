@@ -83,7 +83,36 @@ h1, h2, h3 {
 
 footer {
     background: #222;
+
+.hero.small {
+  padding: 60px 20px;
+}
+
+.gallery {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.gallery img {
+  width: 50%;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.booking-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.booking-form input {
+  padding: 8px;
+  font-size: 14px;
+}
+
     color: #ccc;
     text-align: center;
     padding: 20px;
 }
+
