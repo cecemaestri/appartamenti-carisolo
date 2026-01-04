@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<title>Disponibilità e Prezzi | Appartamenti Carisolo</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header class="hero small">
+  <h1>Disponibilità & Prezzi</h1>
+  <p>Soggiorno minimo: <strong>4 notti</strong></p>
+</header>
+
+<section class="container">
+
+<!-- APPARTAMENTO 1 -->
+<div class="card">
+  <h2>Tana del Tasso</h2>
+
+  <div class="gallery">
+    <img src="img/tana1.jpg" alt="Tana del Tasso Carisolo">
+    <img src="img/tana2.jpg" alt="Tana del Tasso soggiorno">
+  </div>
+
+  <p><strong>Prezzi indicativi:</strong></p>
+  <ul>
+    <li>Bassa stagione: €90 / notte</li>
+    <li>Media stagione: €110 / notte</li>
+    <li>Alta stagione: €130–150 / notte</li>
+  </ul>
+
+  <form class="booking-form" onsubmit="return checkNights(this)">
+    <input type="hidden" name="appartamento" value="Tana del Tasso">
+
+    <label>Data arrivo</label>
+    <input type="date" name="checkin" required>
+
+    <label>Data partenza</label>
+    <input type="date" name="checkout" required>
+
+    <label>Numero ospiti</label>
+    <input type="number" min="1" max="4" required>
+
+    <button type="submit" class="btn">Richiedi disponibilità</button>
+  </form>
+</div>
+
+<!-- APPARTAMENTO 2 -->
+<div class="card">
+  <h2>Vista Brenta</h2>
+
+  <div class="gallery">
+    <img src="img/vista1.jpg" alt="Vista Brenta Carisolo">
+    <img src="img/vista2.jpg" alt="Vista Brenta panorama">
+  </div>
+
+  <p><strong>Prezzi indicativi:</strong></p>
+  <ul>
+    <li>Bassa stagione: €110 / notte</li>
+    <li>Media stagione: €130 / notte</li>
+    <li>Alta stagione: €160–180 / notte</li>
+  </ul>
+
+  <form class="booking-form" onsubmit="return checkNights(this)">
+    <input type="hidden" name="appartamento" value="Vista Brenta">
+
+    <label>Data arrivo</label>
+    <input type="date" name="checkin" required>
+
+    <label>Data partenza</label>
+    <input type="date" name="checkout" required>
+
+    <label>Numero ospiti</label>
+    <input type="number" min="1" max="4" required>
+
+    <button type="submit" class="btn">Richiedi disponibilità</button>
+  </form>
+</div>
+
+</section>
+
+<footer>
+  <p>© 2026 Appartamenti Turistici Carisolo – Val Rendena</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
